@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="burger.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Test 1</title>
+</head>
+<body>
+  <div class="container">
+    <div id="sideBar" class="sideBar">
+      <a href="/" class="sideBar-item sideBar-item--actived">Home</a>
+      <a href="/services" class="sideBar-item">Services</a>
+      <a href="/news" class="sideBar-item">News</a>
+      <a href="/blog" class="sideBar-item">Blog</a>
+      <a href="/contact" class="sideBar-item">Contact</a>
+    </div>
+    <div class="burger" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <img src="/images/logoNCC.png" alt="logo">
+        <div class="content-description">
+          <h1>Lorem ipsum dolor sit asmet?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat. Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu. Donec vulputate odio neque, sed semper turpis pellentesque a.</p>
+        </div>
+        <div class="features">
+          <div class="features-item">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p><img src="/images/css-icon.png" alt="css">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+          </div>
+          <div class="features-item">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <img src="/images/html-icon.png" alt="css">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+          </div>
+          <div class="features-item">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <img src="/images/url-icon.png" alt="css">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Copyright © 2021</div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+      document.getElementById("sideBar").classList.toggle("sideBar--visible");
+    }
+    </script>
+</body>
+</html>
