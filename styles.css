@@ -47,12 +47,7 @@ body {
 }
 
 .sideBar--visible {
-  opacity: 1 !important;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: 100% !important;
 }
 
 .sideBar--visible > .sideBar-item {
@@ -135,8 +130,22 @@ body {
 
 @media only screen and (max-width: 649px) {
   .sideBar {
-    opacity: 0;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s;
+  }
+
+  .sideBar-item {
+    padding-left: 3.6rem;
+    padding-top: 3.4rem;
+    padding-bottom: 3.1rem;
+    font-size: 2.6rem;
   }
 
   .content {
